@@ -9,6 +9,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap"
     rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
   <style>
     /* ── TOKENS ── */
     :root {
@@ -847,6 +848,63 @@
       padding: 26px 24px;
     }
 
+    /* ── LUCIDE ICONS ── */
+    i[data-lucide] {
+      display: inline-block;
+      vertical-align: middle;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .skill-icon i[data-lucide],
+    .cr-emoji i[data-lucide] {
+      width: 26px;
+      height: 26px;
+    }
+
+    .tl-logo i[data-lucide] {
+      width: 22px;
+      height: 22px;
+    }
+
+    .edu-logo i[data-lucide] {
+      width: 20px;
+      height: 20px;
+    }
+
+    .cert-icon i[data-lucide] {
+      width: 18px;
+      height: 18px;
+    }
+
+    .tool-icon i[data-lucide] {
+      width: 18px;
+      height: 18px;
+    }
+
+    .clink-icon i[data-lucide] {
+      width: 22px;
+      height: 22px;
+    }
+
+    .tag-chip i[data-lucide] {
+      width: 14px;
+      height: 14px;
+    }
+
+    .edu-grade i[data-lucide] {
+      width: 14px;
+      height: 14px;
+    }
+
+    .theme-btn i[data-lucide] {
+      width: 16px;
+      height: 16px;
+    }
+
     .skill-icon {
       font-size: 26px;
       margin-bottom: 12px;
@@ -937,7 +995,7 @@
     /* ─────────────────────────────────────
    § HIRE ME
 ───────────────────────────────────── */
-    #hirme {
+    #hireme {
       margin-bottom: 56px;
     }
 
@@ -1288,7 +1346,7 @@
         <a class="nl" href="#education"><span class="nl-dot"></span> Education</a>
         <a class="nl" href="#tools"><span class="nl-dot"></span> Tools</a>
         <a class="nl" href="#creative"><span class="nl-dot"></span> Creative</a>
-        <a class="nl" href="#hirme"><span class="nl-dot"></span> Hire Me</a>
+        <a class="nl" href="#hireme"><span class="nl-dot"></span> Hire Me</a>
         <a class="nl" href="#contact"><span class="nl-dot"></span> Contact</a>
       </nav>
 
@@ -1297,7 +1355,7 @@
           <div class="pulse"></div>
           Open to freelance
         </div>
-        <button class="theme-btn" onclick="toggleTheme()">◑</button>
+        <button class="theme-btn" onclick="toggleTheme()"><i data-lucide="sun-moon"></i></button>
       </div>
 
     </aside>
@@ -1317,16 +1375,20 @@
 
           <div class="card hero-stats reveal d1">
             <div class="stat-block">
-              <div class="stat-n">3</div>
-              <div class="stat-l">Years of experience</div>
+              <div class="stat-n">3+</div>
+              <div class="stat-l">Years Experience</div>
             </div>
             <div class="stat-block">
-              <div class="stat-n">2</div>
-              <div class="stat-l">Companies shaped</div>
+              <div class="stat-n">150+</div>
+              <div class="stat-l">Projects Delivered</div>
             </div>
             <div class="stat-block">
-              <div class="stat-n">∞</div>
-              <div class="stat-l">Problems enjoyed</div>
+              <div class="stat-n">15+</div>
+              <div class="stat-l">Happy Clients</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-n">200+</div>
+              <div class="stat-l">Screens Designed</div>
             </div>
           </div>
 
@@ -1340,9 +1402,9 @@
           </div>
 
           <div class="card hero-personal reveal d1">
-            <div class="tag-chip">☕ chai-fueled designer</div>
-            <div class="tag-chip">📍 Navi Mumbai, India</div>
-            <div class="tag-chip">🌏 Open to remote</div>
+            <div class="tag-chip"><i data-lucide="coffee"></i> chai-fueled designer</div>
+            <div class="tag-chip"><i data-lucide="map-pin"></i> Navi Mumbai, India</div>
+            <div class="tag-chip"><i data-lucide="globe"></i> Open to remote</div>
           </div>
 
           <div class="card hero-logos reveal d2">
@@ -1366,13 +1428,14 @@
               <!-- LineupX -->
               <div class="tl-item">
                 <div class="tl-left">
-                  <div class="tl-logo">🚀</div>
+                  <div class="tl-logo"><i data-lucide="layout-dashboard"></i></div>
                   <div class="tl-line"></div>
                 </div>
                 <div class="tl-right">
                   <div class="tl-title">Product Designer</div>
                   <div class="tl-company">LineupX · SINE IIT Bombay</div>
-                  <div class="tl-meta">Nov 2024 — Present &nbsp;·&nbsp; Full-time &nbsp;·&nbsp; 📍 Mumbai, India</div>
+                  <div class="tl-meta">Nov 2024 — Present &nbsp;·&nbsp; Full-time &nbsp;·&nbsp; <i data-lucide="map-pin"
+                      style="width:12px;height:12px;vertical-align:middle"></i> Mumbai, India</div>
                   <span class="tl-badge cur">● Currently here</span>
                   <ul class="tl-bullets">
                     <li>Led end-to-end product design for an AI-powered career services platform serving students,
@@ -1398,13 +1461,14 @@
               <!-- 26 Ideas -->
               <div class="tl-item">
                 <div class="tl-left">
-                  <div class="tl-logo">💼</div>
+                  <div class="tl-logo"><i data-lucide="briefcase"></i></div>
                   <div class="tl-line"></div>
                 </div>
                 <div class="tl-right">
                   <div class="tl-title">UI Designer</div>
                   <div class="tl-company">26 Ideas</div>
-                  <div class="tl-meta">Jul 2024 — Oct 2024 &nbsp;·&nbsp; 4 months &nbsp;·&nbsp; 📍 Mumbai, India</div>
+                  <div class="tl-meta">Jul 2024 — Oct 2024 &nbsp;·&nbsp; 4 months &nbsp;·&nbsp; <i data-lucide="map-pin"
+                      style="width:12px;height:12px;vertical-align:middle"></i> Mumbai, India</div>
                   <span class="tl-badge">Contract</span>
                   <ul class="tl-bullets">
                     <li>Designed CRM applications across event, advertising, venue, and catering management.</li>
@@ -1423,13 +1487,14 @@
               <!-- Atos -->
               <div class="tl-item">
                 <div class="tl-left">
-                  <div class="tl-logo">🔧</div>
+                  <div class="tl-logo"><i data-lucide="settings-2"></i></div>
                   <div class="tl-line"></div>
                 </div>
                 <div class="tl-right">
                   <div class="tl-title">Problem Manager</div>
                   <div class="tl-company">Atos Global IT Solutions</div>
-                  <div class="tl-meta">Sep 2022 — Sep 2023 &nbsp;·&nbsp; 1 year &nbsp;·&nbsp; 📍 Navi Mumbai, India
+                  <div class="tl-meta">Sep 2022 — Sep 2023 &nbsp;·&nbsp; 1 year &nbsp;·&nbsp; <i data-lucide="map-pin"
+                      style="width:12px;height:12px;vertical-align:middle"></i> Navi Mumbai, India
                   </div>
                   <span class="tl-badge">Full-time</span>
                   <ul class="tl-bullets">
@@ -1459,37 +1524,37 @@
         <div class="bento">
 
           <div class="card skill-card s4 reveal">
-            <div class="skill-icon">🔬</div>
+            <div class="skill-icon"><i data-lucide="search"></i></div>
             <div class="skill-title">Research</div>
             <p class="skill-body">User research, usability testing, heuristic evaluation, journey mapping, information
               architecture.</p>
           </div>
           <div class="card skill-card s4 reveal d1">
-            <div class="skill-icon">✏️</div>
+            <div class="skill-icon"><i data-lucide="pen-tool"></i></div>
             <div class="skill-title">Design</div>
             <p class="skill-body">Wireframing, prototyping, visual design, UI systems, responsive design for web and
               mobile.</p>
           </div>
           <div class="card skill-card s4 reveal d2">
-            <div class="skill-icon">🧩</div>
+            <div class="skill-icon"><i data-lucide="blocks"></i></div>
             <div class="skill-title">Systems</div>
             <p class="skill-body">Design systems, component libraries, tokens, documentation and scalable pattern
               libraries.</p>
           </div>
           <div class="card skill-card s4 reveal">
-            <div class="skill-icon">🤝</div>
+            <div class="skill-icon"><i data-lucide="users"></i></div>
             <div class="skill-title">Collaboration</div>
             <p class="skill-body">Cross-functional teamwork, Agile/Scrum, design documentation, stakeholder
               presentations.</p>
           </div>
           <div class="card skill-card s4 reveal d1">
-            <div class="skill-icon">🧠</div>
+            <div class="skill-icon"><i data-lucide="brain"></i></div>
             <div class="skill-title">Analytical</div>
             <p class="skill-body">Root cause analysis, critical thinking, data interpretation, problem solving and ITSM
               processes.</p>
           </div>
           <div class="card skill-card s4 reveal d2">
-            <div class="skill-icon">⚡</div>
+            <div class="skill-icon"><i data-lucide="sparkles"></i></div>
             <div class="skill-title">AI-Augmented</div>
             <p class="skill-body">ChatGPT, Lovable AI, prompt engineering, AI image generation, design automation
               workflows.</p>
@@ -1506,26 +1571,26 @@
           <!-- Education cards -->
           <div class="card edu-card s6 reveal">
             <div class="edu-header">
-              <div class="edu-logo">🎓</div>
+              <div class="edu-logo"><i data-lucide="graduation-cap"></i></div>
               <div>
                 <div class="edu-degree">UI/UX &amp; Creative Design</div>
                 <div class="edu-school">My Captain, Bangalore</div>
                 <div class="edu-meta">Jun 2023 — Jun 2024 &nbsp;·&nbsp; Pro Course</div>
               </div>
             </div>
-            <div class="edu-grade">⭐ Grade: A</div>
+            <div class="edu-grade"><i data-lucide="star"></i> Grade: A</div>
           </div>
 
           <div class="card edu-card s6 reveal d1">
             <div class="edu-header">
-              <div class="edu-logo">🏛️</div>
+              <div class="edu-logo"><i data-lucide="landmark"></i></div>
               <div>
                 <div class="edu-degree">B.E. — Electronics &amp; Telecommunications</div>
                 <div class="edu-school">D.Y. Patil's RAIT, Navi Mumbai</div>
                 <div class="edu-meta">Aug 2018 — May 2022 &nbsp;·&nbsp; Bachelor of Engineering</div>
               </div>
             </div>
-            <div class="edu-grade">📊 GPA: 9.17 / 10</div>
+            <div class="edu-grade"><i data-lucide="bar-chart-2"></i> GPA: 9.17 / 10</div>
           </div>
 
           <!-- Certifications - full width list card -->
@@ -1536,28 +1601,28 @@
                 Certifications</div>
             </div>
             <div class="cert-item">
-              <div class="cert-icon">🎨</div>
+              <div class="cert-icon"><i data-lucide="palette"></i></div>
               <div>
                 <div class="cert-name">UI UX Creative Design Pro Course</div>
                 <div class="cert-issuer">My Captain</div>
               </div>
             </div>
             <div class="cert-item">
-              <div class="cert-icon">🔵</div>
+              <div class="cert-icon"><i data-lucide="award"></i></div>
               <div>
                 <div class="cert-name">Google UX Design Specialization</div>
                 <div class="cert-issuer">Coursera · Google</div>
               </div>
             </div>
             <div class="cert-item">
-              <div class="cert-icon">🟣</div>
+              <div class="cert-icon"><i data-lucide="shield-check"></i></div>
               <div>
                 <div class="cert-name">User Experience Design Fundamentals</div>
                 <div class="cert-issuer">IBM SkillsBuild</div>
               </div>
             </div>
             <div class="cert-item">
-              <div class="cert-icon">🟢</div>
+              <div class="cert-icon"><i data-lucide="badge-check"></i></div>
               <div>
                 <div class="cert-name">Digital Skills: User Experience</div>
                 <div class="cert-issuer">Accenture</div>
@@ -1572,15 +1637,19 @@
       <section id="tools">
         <div class="s-eyebrow">05 — Tools I Live In</div>
         <div class="tools-wrap">
-          <div class="tool-pill reveal"><span class="tool-icon">🎨</span> Figma</div>
-          <div class="tool-pill reveal d1"><span class="tool-icon">🌐</span> Framer</div>
-          <div class="tool-pill reveal d2"><span class="tool-icon">✍️</span> Illustrator</div>
-          <div class="tool-pill reveal d3"><span class="tool-icon">📸</span> Photoshop</div>
-          <div class="tool-pill reveal"><span class="tool-icon">💻</span> HTML / CSS / JS</div>
-          <div class="tool-pill reveal d1"><span class="tool-icon">📊</span> Power BI</div>
-          <div class="tool-pill reveal d2"><span class="tool-icon">🔧</span> ServiceNow</div>
-          <div class="tool-pill reveal d3"><span class="tool-icon">🤖</span> ChatGPT</div>
-          <div class="tool-pill reveal"><span class="tool-icon">💡</span> Lovable AI</div>
+          <div class="tool-pill reveal"><span class="tool-icon"><i data-lucide="figma"></i></span> Figma</div>
+          <div class="tool-pill reveal d1"><span class="tool-icon"><i data-lucide="frame"></i></span> Framer</div>
+          <div class="tool-pill reveal d2"><span class="tool-icon"><i data-lucide="pen-tool"></i></span> Illustrator
+          </div>
+          <div class="tool-pill reveal d3"><span class="tool-icon"><i data-lucide="image"></i></span> Photoshop</div>
+          <div class="tool-pill reveal"><span class="tool-icon"><i data-lucide="code-2"></i></span> HTML / CSS / JS
+          </div>
+          <div class="tool-pill reveal d1"><span class="tool-icon"><i data-lucide="bar-chart-2"></i></span> Power BI
+          </div>
+          <div class="tool-pill reveal d2"><span class="tool-icon"><i data-lucide="settings"></i></span> ServiceNow
+          </div>
+          <div class="tool-pill reveal d3"><span class="tool-icon"><i data-lucide="bot"></i></span> ChatGPT</div>
+          <div class="tool-pill reveal"><span class="tool-icon"><i data-lucide="zap"></i></span> Lovable AI</div>
         </div>
       </section>
 
@@ -1591,28 +1660,28 @@
 
           <div class="card s12 reveal" style="padding:28px 32px;">
             <p
-              style="font-family:'Playfair Display',serif;font-size:clamp(18px,2.5vw,26px);font-style:italic;font-weight:400;color:var(--t2);line-height:1.5;max-width:600px;">
+              style="font-family:'Playfair Display',serif;font-size:clamp(18px,2.5vw,26px);font-style:italic;font-weight:400;color:var(--t2);line-height:1.5;">
               "Design doesn't stop when I close my laptop. Making things outside screens keeps my thinking honest and
               human."</p>
           </div>
 
           <div class="card creative-card s3 reveal">
-            <div class="cr-emoji">🎵</div>
+            <div class="cr-emoji"><i data-lucide="music"></i></div>
             <div class="cr-title">Spotify Art Cards</div>
             <p class="cr-body">Visual storytelling through music — custom artwork for playlists and tracks.</p>
           </div>
           <div class="card creative-card s3 reveal d1">
-            <div class="cr-emoji">🎁</div>
+            <div class="cr-emoji"><i data-lucide="gift"></i></div>
             <div class="cr-title">Handmade Gifts</div>
             <p class="cr-body">Material thinking — understanding texture, craft, and the weight of care.</p>
           </div>
           <div class="card creative-card s3 reveal d2">
-            <div class="cr-emoji">📊</div>
+            <div class="cr-emoji"><i data-lucide="presentation"></i></div>
             <div class="cr-title">Custom Decks</div>
             <p class="cr-body">Pitch deck and presentation design that tells a story, not just bullet points.</p>
           </div>
           <div class="card creative-card s3 reveal d3">
-            <div class="cr-emoji">💡</div>
+            <div class="cr-emoji"><i data-lucide="lightbulb"></i></div>
             <div class="cr-title">Concept Design</div>
             <p class="cr-body">Speculative and personal design explorations that have no brief.</p>
           </div>
@@ -1621,7 +1690,7 @@
       </section>
 
       <!-- § HIRE ME -->
-      <section id="hirme">
+      <section id="hireme">
         <div class="s-eyebrow">07 — Hire Me</div>
         <div class="bento">
 
@@ -1670,7 +1739,7 @@
           <div class="s8 reveal d1" style="display:flex;flex-direction:column;gap:8px;">
             <a class="clink" href="mailto:tanvirkalha.design@gmail.com">
               <div class="clink-l">
-                <span class="clink-icon">📧</span>
+                <span class="clink-icon"><i data-lucide="mail"></i></span>
                 <div>
                   <div class="clink-label">Email</div>
                   <div class="clink-val">tanvirkalha.design@gmail.com</div>
@@ -1680,7 +1749,7 @@
             </a>
             <a class="clink" href="https://linkedin.com/in/tanvir-kalha" target="_blank">
               <div class="clink-l">
-                <span class="clink-icon">💼</span>
+                <span class="clink-icon"><i data-lucide="linkedin"></i></span>
                 <div>
                   <div class="clink-label">LinkedIn</div>
                   <div class="clink-val">linkedin.com/in/tanvir-kalha</div>
@@ -1690,7 +1759,7 @@
             </a>
             <a class="clink" href="https://www.instagram.com/tasvirbytanvir/" target="_blank">
               <div class="clink-l">
-                <span class="clink-icon">🔗</span>
+                <span class="clink-icon"><i data-lucide="instagram"></i></span>
                 <div>
                   <div class="clink-label">Instagram</div>
                   <div class="clink-val">www.instagram.com/tasvirbytanvir/</div>
@@ -1700,7 +1769,7 @@
             </a>
             <a class="clink" href="tel:+917506068220">
               <div class="clink-l">
-                <span class="clink-icon">📱</span>
+                <span class="clink-icon"><i data-lucide="phone"></i></span>
                 <div>
                   <div class="clink-label">Phone</div>
                   <div class="clink-val">+91 7506068220</div>
@@ -1759,6 +1828,9 @@
       const h = document.documentElement;
       h.setAttribute('data-theme', h.getAttribute('data-theme') === 'light' ? 'dark' : 'light');
     }
+
+    /* LUCIDE INIT */
+    lucide.createIcons();
 
     /* CARD TILT */
     document.querySelectorAll('.card').forEach(c => {
