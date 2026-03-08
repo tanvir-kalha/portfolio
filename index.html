@@ -1445,6 +1445,10 @@
             font-weight: 500;
         }
 
+        .menu-toggle {
+            display: none;
+        }
+
         @media (max-width: 800px) {
             .services-grid {
                 grid-template-columns: 1fr;
@@ -1487,12 +1491,47 @@
             }
 
             .sidebar {
-                display: none;
+                transform: translateX(-100%);
+                display: flex;
+                transition: transform 0.4s var(--ease);
+                width: 100vw;
+                height: 100vh;
+                position: fixed;
+                background: var(--bg);
+                padding-top: 80px;
+            }
+
+            .sidebar.nav-active {
+                transform: translateX(0);
             }
 
             .main {
                 margin-left: 0;
                 padding: 20px 16px 48px;
+            }
+
+            /* Hamburger Menu */
+            .menu-toggle {
+                display: flex;
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 1000;
+                background: var(--bg-2);
+                border: 1px solid var(--border);
+                border-radius: 8px;
+                width: 40px;
+                height: 40px;
+                align-items: center;
+                justify-content: center;
+                color: var(--t1);
+                cursor: pointer;
+            }
+
+            .sidebar .resume-btn {
+                margin-top: 20px;
+                width: calc(100% - 48px);
+                justify-content: center;
             }
 
             .s8,
@@ -1556,6 +1595,10 @@
 
     <div id="c-dot"></div>
     <div id="c-ring"></div>
+
+    <button class="menu-toggle" id="menu-toggle">
+        <i data-lucide="menu"></i>
+    </button>
 
     <div class="shell">
 
@@ -2189,6 +2232,31 @@
         }
 
         lucide.createIcons();
+
+        /* MOBILE MENU */
+        const menuToggle = document.getElementById('menu-toggle');
+        const sidebar = document.querySelector('.sidebar');
+        const navLinks = document.querySelectorAll('.nl');
+
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('nav-active');
+            const icon = menuToggle.querySelector('i');
+            if (sidebar.classList.contains('nav-active')) {
+                icon.setAttribute('data-lucide', 'x');
+            } else {
+                icon.setAttribute('data-lucide', 'menu');
+            }
+            lucide.createIcons();
+        });
+
+        // Close menu on link click
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                sidebar.classList.remove('nav-active');
+                menuToggle.querySelector('i').setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
     </script>
 </body>
 
